@@ -19,4 +19,7 @@ ib
 pystac-client
 odc-stac
 eccodes
+opencv-python
+tensorflow
+scikit-learn
 git+https://github.com/blaylockbk/Carpenter_Workshop.git
