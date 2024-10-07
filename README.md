@@ -13,9 +13,14 @@ This repository contains a set of experiments to use GOES data. To run this code
 ```
 3. Create a virtual environment using conda
 ```bash
-   conda create --name GOES_env --file cd_requirements.txt
+   conda create -n Goes_env -c conda-forge gdal libgdal-hdf5 pygrib
 ```
 4. Activate the virtual environment
 ```bash
    conda activate GOES_env
 ```
+5. Install remaining packages using PIP
+```bash
+   pip install -r requirements.txt
+```
+
