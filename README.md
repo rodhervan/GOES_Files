@@ -1,8 +1,8 @@
-## GOES Files
+# GOES Files
 
 This repository contains a set of experiments to use GOES data. To run this code follow these steps using conda and pip packet managers
 
-### Installation
+## Installation
 1. Navigate to the folder where the project files are going to be:
 ```bash
    cd your/path/to/project
@@ -23,6 +23,9 @@ This repository contains a set of experiments to use GOES data. To run this code
 ```bash
    pip install -r requirements.txt
 ```
-### Usage
-# Derived motion winds
+## Usage
+### Derived motion winds
 The notebook [DerivedMotionWinds_cartopy.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/DerivedMotionWinds_cartopy.ipynb) contains a function to create an image of the Derived Motion Winds vectors at different heights. By default it downloads images from the CMI band 14, and the DMW product which is available every hour. The input must be a date and time in the format YYYYMMDDhhmm and a destination folder.
+
+### Files Downloader
+This notebook can be used to download GOES ´.nc´ files of different products. 
