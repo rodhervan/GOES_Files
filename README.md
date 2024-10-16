@@ -1,6 +1,6 @@
 # GOES Files
 
-This repository contains a set of experiments to use GOES data. To run this code follow these steps using conda and pip packet managers
+This repository contains a set of notebooks and python files to handle GOES data. To run this code follow these steps using conda and pip packet managers
 
 ## Installation
 1. Navigate to the folder where the project files are going to be:
