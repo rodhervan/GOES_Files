@@ -30,5 +30,9 @@ The notebook [DerivedMotionWinds_cartopy.ipynb](https://github.com/rodhervan/GOE
 ### Files Downloader
 This notebook can be used to download GOES ´.nc´ files of different products. By default it is set to slice and resize the images at a set value of `x=(-0.05, 0.07)` and  `y=(0.09, -0.03)` at a resolution of 300x300 pixels.
 
-### Images Convolutional Neural Network
+### Correlation of variables
+To justify the usage of these images as a prediction input, a correlation study between the GHI and the CMI was done at different time lags. This process can be seen in the notebook [GOES_corr_B02 processing.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/GOES_corr_B02%20processing.ipynb).
+
+### Convolutional Neural Network for GOES Images
 For this process two notebooks are used. The first one [cnn_B02_cos_sin 2H_train.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/cnn_B02_cos_sin%202H_train.ipynb) is related to loading and handling of data, to train a CNN model. The second notebook [cnn_B02_cos_sin 2H_Inference.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/cnn_B02_cos_sin%202H_Inference.ipynb) continues this process to load the model, and execute inferences on any given image input and matching GHI data. 
+
