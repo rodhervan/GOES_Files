@@ -27,7 +27,7 @@ This repository contains a set of notebooks and python files to handle GOES data
 ### Derived motion winds
 The notebook [DerivedMotionWinds_cartopy.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/DerivedMotionWinds_cartopy.ipynb) contains a function to create an image of the Derived Motion Winds vectors at different heights. By default it downloads images from the CMI band 14, and the DMW product which is available every hour.
 
-To do this run the funtion `plot_dmw`. The inputs must for this function must be the time in the format YYYYMMDDhhmm and a destination folder, since the data is only available hourly the hh field must be a number from 0 to 24 and the mm number must always be set to 00. The reulting image will be a plot of the CMI band 14 as background, sliced at a set extent and the velocity vectors divided by heights (according to pressure).
+To gnerate this plot, run the funtion `plot_dmw`. The inputs must for this function must be the time in the format YYYYMMDDhhmm and a destination folder, since the data is only available hourly the hh field must be a number from 0 to 24 and the mm number must always be set to 00. The reulting image will be a plot of the CMI band 14 as background, sliced at a set extent and the velocity vectors divided by heights (according to pressure).
 
 ### Files Downloader
 This notebook can be used to download GOES ´.nc´ files of different products. By default it is set to slice the images at a set value of `x=(-0.05, 0.07)` and  `y=(0.09, -0.03)`, and execute a downscale to a resolution of 300x300 pixels.
