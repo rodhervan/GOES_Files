@@ -1,0 +1,1 @@
+Add the `.nc` files for training and validation in this folder
