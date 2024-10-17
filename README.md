@@ -30,7 +30,7 @@ The notebook [DerivedMotionWinds_cartopy.ipynb](https://github.com/rodhervan/GOE
 To generate this plot, run the funtion `plot_dmw`. The inputs for this function must be the time in the format YYYYMMDDhhmm and a destination folder. Since the data is only available hourly the hh field must be a number from 0 to 24 and the mm number must always be set to 00. The reulting image will be a plot of the CMI band 14 as background (sliced at a set extent) and the velocity vectors divided by heights (according to pressure). Sometimes the data for a specific hour may not be available in the BOTO3 servers, in which case plotting an image will not be possible.
 
 ### Files Downloader
-This notebook can be used to download GOES ´.nc´ files of different products. By default it is set to slice the images at a set value of `x=(-0.05, 0.07)` and  `y=(0.09, -0.03)`, and execute a downscale to a resolution of 300x300 pixels.
+The notebook [goes_downloads.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/goes_downloads.ipynb) can be used to download GOES ´.nc´ files of different products. By default it is set to slice the images at a set value of `x=(-0.05, 0.07)` and  `y=(0.09, -0.03)`, and execute a downscale to a resolution of 300x300 pixels.
 
 ### Correlation of variables
 To justify the usage of these images as a prediction input, a correlation study between the GHI and the CMI was done at different time lags. This process can be seen in the notebook [GOES_corr_B02 processing.ipynb](https://github.com/rodhervan/GOES_Files/blob/main/GOES_corr_B02%20processing.ipynb).
